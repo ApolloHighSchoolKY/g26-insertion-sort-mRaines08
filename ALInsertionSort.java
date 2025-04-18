@@ -16,7 +16,7 @@ public class ALInsertionSort
 		for(int pos = 1; pos < myNumbers.length; pos++)
 		{
 			int temp = myNumbers[pos];
-			for(int i = 0; i < pos; i++)
+			for(int i = 0; i < pos && inserted; i++)
 			{
 				if(sorted.get(i) < temp)
 				{
@@ -46,7 +46,6 @@ public class ALInsertionSort
 
 		//End Loop for unsorted list
 
-		System.out.println(sorted);
 
 		//Move the data back to the array
 
